@@ -5,16 +5,17 @@ What happens when you initialize a repository? Why do you need to do it?
 How is the staging area different from the working directory and the repository? What value do you think it offers?
 	Staging area is used to commit multiple files. Staging area is just helpful to recheck that this is the only files you want to commit. Repository just contains the file with their final commits. Working directory is just any normal folder you are working on. 
 
-How can you use the staging area to make sure you have one commit per logical
-change?
+How can you use the staging area to make sure you have one commit per logical change?
+	Using git diff --staged you can see the diff between staging area and most recent commit, so you can know what you are going to commit.
 
-What are some situations when branches would be helpful in keeping your history
-organized? How would branches help?
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+	It will be helpful if we are working on two or more independent features at the same time to keep the history organised.
 
 How do the diagrams help you visualize the branch structure?
+	We can know where a particular branch breaks off from some other branch 
 
-What is the result of merging two branches together? Why do we represent it in
-the diagram the way we do?
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+	A new merge commit would be created which contains the contents of both the branches. If both branches have changed the same file, then the final file will contain contents on both. It is easy to understand in the graph as we represent.
 
-What are the pros and cons of Git’s automatic merging vs. always doing merges
-manually?
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+	Automatic merging will be useful when for say two branches have modified completely different files. Manual merging will be required if two branches have made changes to the same file.
